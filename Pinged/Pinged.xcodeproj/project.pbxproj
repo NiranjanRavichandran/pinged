@@ -1,0 +1,1158 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		421C76E024AFDA770074D7D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C76DF24AFDA770074D7D9 /* AppDelegate.swift */; };
+		421C76E224AFDA770074D7D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C76E124AFDA770074D7D9 /* SceneDelegate.swift */; };
+		421C76E524AFDA770074D7D9 /* Pinged.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 421C76E324AFDA770074D7D9 /* Pinged.xcdatamodeld */; };
+		421C76E724AFDA770074D7D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C76E624AFDA770074D7D9 /* ContentView.swift */; };
+		421C76E924AFDA790074D7D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421C76E824AFDA790074D7D9 /* Assets.xcassets */; };
+		421C76EC24AFDA790074D7D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421C76EB24AFDA790074D7D9 /* Preview Assets.xcassets */; };
+		421C76EF24AFDA790074D7D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421C76ED24AFDA790074D7D9 /* LaunchScreen.storyboard */; };
+		421C76FA24AFDA790074D7D9 /* PingedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C76F924AFDA790074D7D9 /* PingedTests.swift */; };
+		421C770524AFDA790074D7D9 /* PingedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C770424AFDA790074D7D9 /* PingedUITests.swift */; };
+		421C77C824B020500074D7D9 /* LANScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421C77BF24B020500074D7D9 /* LANScanner.framework */; };
+		421C77CF24B020500074D7D9 /* LANScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 421C77CE24B020500074D7D9 /* LANScannerTests.m */; };
+		421C77D124B020500074D7D9 /* LANScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C77C124B020500074D7D9 /* LANScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C77D424B020500074D7D9 /* LANScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421C77BF24B020500074D7D9 /* LANScanner.framework */; };
+		421C77D524B020500074D7D9 /* LANScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 421C77BF24B020500074D7D9 /* LANScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		421C780D24B024EA0074D7D9 /* LANScannerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C780C24B024E90074D7D9 /* LANScannerClient.swift */; };
+		421C780F24B026650074D7D9 /* DevicesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C780E24B026650074D7D9 /* DevicesListView.swift */; };
+		421C781124B0279A0074D7D9 /* SimpleListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C781024B0279A0074D7D9 /* SimpleListRow.swift */; };
+		421C781324B034060074D7D9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C781224B034060074D7D9 /* Logger.swift */; };
+		421C783F24B123190074D7D9 /* MMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 421C782924B121730074D7D9 /* MMDevice.m */; };
+		421C784024B1231D0074D7D9 /* MMDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C782A24B121730074D7D9 /* MMDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C784124B123240074D7D9 /* LANProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C782F24B121730074D7D9 /* LANProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C784224B123240074D7D9 /* PingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C783024B121730074D7D9 /* PingOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C784324B123240074D7D9 /* MMLANScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C783324B121730074D7D9 /* MMLANScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C784424B123240074D7D9 /* NetworkCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 421C783224B121730074D7D9 /* NetworkCalculator.m */; };
+		421C784524B123240074D7D9 /* LANProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 421C783424B121730074D7D9 /* LANProperties.m */; };
+		421C784624B123240074D7D9 /* PingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 421C783524B121730074D7D9 /* PingOperation.m */; };
+		421C784724B123240074D7D9 /* MMLANScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 421C782C24B121730074D7D9 /* MMLANScanner.m */; };
+		421C784824B123240074D7D9 /* NetworkCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C782D24B121730074D7D9 /* NetworkCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C784924B123240074D7D9 /* MACOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C782E24B121730074D7D9 /* MACOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C784A24B123240074D7D9 /* MACOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 421C783124B121730074D7D9 /* MACOperation.m */; };
+		421C784B24B1234A0074D7D9 /* MacFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C782224B121720074D7D9 /* MacFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C784C24B123500074D7D9 /* if_ether.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C782024B121720074D7D9 /* if_ether.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C784D24B123500074D7D9 /* if_arp.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C782124B121720074D7D9 /* if_arp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C784E24B123500074D7D9 /* route.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C781F24B121720074D7D9 /* route.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C784F24B123540074D7D9 /* MacFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 421C781D24B121720074D7D9 /* MacFinder.m */; };
+		421C785024B1235B0074D7D9 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 421C782724B121720074D7D9 /* data.plist */; };
+		421C785124B123660074D7D9 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 421C782524B121720074D7D9 /* SimplePing.m */; };
+		421C785224B1236A0074D7D9 /* SimplePing.h in Headers */ = {isa = PBXBuildFile; fileRef = 421C782424B121720074D7D9 /* SimplePing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421C785424B12CA40074D7D9 /* DevicesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C785324B12CA40074D7D9 /* DevicesListViewModel.swift */; };
+		421C785624B157870074D7D9 /* MMDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C785524B157870074D7D9 /* MMDeviceExtension.swift */; };
+		421C785E24B171340074D7D9 /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C785D24B171340074D7D9 /* DeviceDetailView.swift */; };
+		421C786024B174CE0074D7D9 /* LANScannerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C785F24B174CE0074D7D9 /* LANScannerStatus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		421C76F624AFDA790074D7D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 421C76D424AFDA770074D7D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 421C76DB24AFDA770074D7D9;
+			remoteInfo = Pinged;
+		};
+		421C770124AFDA790074D7D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 421C76D424AFDA770074D7D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 421C76DB24AFDA770074D7D9;
+			remoteInfo = Pinged;
+		};
+		421C77C924B020500074D7D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 421C76D424AFDA770074D7D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 421C77BE24B020500074D7D9;
+			remoteInfo = LANScanner;
+		};
+		421C77CB24B020500074D7D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 421C76D424AFDA770074D7D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 421C76DB24AFDA770074D7D9;
+			remoteInfo = Pinged;
+		};
+		421C77D224B020500074D7D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 421C76D424AFDA770074D7D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 421C77BE24B020500074D7D9;
+			remoteInfo = LANScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		421C778424B00E3B0074D7D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				421C77D524B020500074D7D9 /* LANScanner.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		421C76DC24AFDA770074D7D9 /* Pinged.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinged.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		421C76DF24AFDA770074D7D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		421C76E124AFDA770074D7D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		421C76E424AFDA770074D7D9 /* Pinged.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pinged.xcdatamodel; sourceTree = "<group>"; };
+		421C76E624AFDA770074D7D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		421C76E824AFDA790074D7D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		421C76EB24AFDA790074D7D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		421C76EE24AFDA790074D7D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		421C76F024AFDA790074D7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421C76F524AFDA790074D7D9 /* PingedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		421C76F924AFDA790074D7D9 /* PingedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingedTests.swift; sourceTree = "<group>"; };
+		421C76FB24AFDA790074D7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421C770024AFDA790074D7D9 /* PingedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		421C770424AFDA790074D7D9 /* PingedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingedUITests.swift; sourceTree = "<group>"; };
+		421C770624AFDA790074D7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421C77B824B01AE70074D7D9 /* Pinged-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pinged-Bridging-Header.h"; sourceTree = "<group>"; };
+		421C77BF24B020500074D7D9 /* LANScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LANScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421C77C124B020500074D7D9 /* LANScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LANScanner.h; sourceTree = "<group>"; };
+		421C77C224B020500074D7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421C77C724B020500074D7D9 /* LANScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LANScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		421C77CE24B020500074D7D9 /* LANScannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LANScannerTests.m; sourceTree = "<group>"; };
+		421C77D024B020500074D7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421C780C24B024E90074D7D9 /* LANScannerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANScannerClient.swift; sourceTree = "<group>"; };
+		421C780E24B026650074D7D9 /* DevicesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListView.swift; sourceTree = "<group>"; };
+		421C781024B0279A0074D7D9 /* SimpleListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListRow.swift; sourceTree = "<group>"; };
+		421C781224B034060074D7D9 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		421C781D24B121720074D7D9 /* MacFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacFinder.m; sourceTree = "<group>"; };
+		421C781F24B121720074D7D9 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		421C782024B121720074D7D9 /* if_ether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_ether.h; sourceTree = "<group>"; };
+		421C782124B121720074D7D9 /* if_arp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_arp.h; sourceTree = "<group>"; };
+		421C782224B121720074D7D9 /* MacFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacFinder.h; sourceTree = "<group>"; };
+		421C782424B121720074D7D9 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		421C782524B121720074D7D9 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		421C782724B121720074D7D9 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		421C782924B121730074D7D9 /* MMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDevice.m; sourceTree = "<group>"; };
+		421C782A24B121730074D7D9 /* MMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDevice.h; sourceTree = "<group>"; };
+		421C782C24B121730074D7D9 /* MMLANScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLANScanner.m; sourceTree = "<group>"; };
+		421C782D24B121730074D7D9 /* NetworkCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCalculator.h; sourceTree = "<group>"; };
+		421C782E24B121730074D7D9 /* MACOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACOperation.h; sourceTree = "<group>"; };
+		421C782F24B121730074D7D9 /* LANProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LANProperties.h; sourceTree = "<group>"; };
+		421C783024B121730074D7D9 /* PingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingOperation.h; sourceTree = "<group>"; };
+		421C783124B121730074D7D9 /* MACOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACOperation.m; sourceTree = "<group>"; };
+		421C783224B121730074D7D9 /* NetworkCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCalculator.m; sourceTree = "<group>"; };
+		421C783324B121730074D7D9 /* MMLANScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLANScanner.h; sourceTree = "<group>"; };
+		421C783424B121730074D7D9 /* LANProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LANProperties.m; sourceTree = "<group>"; };
+		421C783524B121730074D7D9 /* PingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingOperation.m; sourceTree = "<group>"; };
+		421C785324B12CA40074D7D9 /* DevicesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListViewModel.swift; sourceTree = "<group>"; };
+		421C785524B157870074D7D9 /* MMDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMDeviceExtension.swift; sourceTree = "<group>"; };
+		421C785D24B171340074D7D9 /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
+		421C785F24B174CE0074D7D9 /* LANScannerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANScannerStatus.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		421C76D924AFDA770074D7D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421C77D424B020500074D7D9 /* LANScanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C76F224AFDA790074D7D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C76FD24AFDA790074D7D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C77BC24B020500074D7D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C77C424B020500074D7D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421C77C824B020500074D7D9 /* LANScanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		421C76D324AFDA770074D7D9 = {
+			isa = PBXGroup;
+			children = (
+				421C76DE24AFDA770074D7D9 /* Pinged */,
+				421C76F824AFDA790074D7D9 /* PingedTests */,
+				421C770324AFDA790074D7D9 /* PingedUITests */,
+				421C77C024B020500074D7D9 /* LANScanner */,
+				421C77CD24B020500074D7D9 /* LANScannerTests */,
+				421C76DD24AFDA770074D7D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		421C76DD24AFDA770074D7D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				421C76DC24AFDA770074D7D9 /* Pinged.app */,
+				421C76F524AFDA790074D7D9 /* PingedTests.xctest */,
+				421C770024AFDA790074D7D9 /* PingedUITests.xctest */,
+				421C77BF24B020500074D7D9 /* LANScanner.framework */,
+				421C77C724B020500074D7D9 /* LANScannerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		421C76DE24AFDA770074D7D9 /* Pinged */ = {
+			isa = PBXGroup;
+			children = (
+				421C76DF24AFDA770074D7D9 /* AppDelegate.swift */,
+				421C76E124AFDA770074D7D9 /* SceneDelegate.swift */,
+				421C76E624AFDA770074D7D9 /* ContentView.swift */,
+				421C780C24B024E90074D7D9 /* LANScannerClient.swift */,
+				421C785724B16B700074D7D9 /* Devices */,
+				421C785924B16BAA0074D7D9 /* Utility */,
+				421C785A24B16BB60074D7D9 /* Core */,
+				421C785824B16B970074D7D9 /* SharedViews */,
+				421C780B24B023720074D7D9 /* Assets */,
+				421C76EA24AFDA790074D7D9 /* Preview Content */,
+				421C77B924B01AEE0074D7D9 /* Resources */,
+			);
+			path = Pinged;
+			sourceTree = "<group>";
+		};
+		421C76EA24AFDA790074D7D9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				421C76EB24AFDA790074D7D9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		421C76F824AFDA790074D7D9 /* PingedTests */ = {
+			isa = PBXGroup;
+			children = (
+				421C76F924AFDA790074D7D9 /* PingedTests.swift */,
+				421C76FB24AFDA790074D7D9 /* Info.plist */,
+			);
+			path = PingedTests;
+			sourceTree = "<group>";
+		};
+		421C770324AFDA790074D7D9 /* PingedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				421C770424AFDA790074D7D9 /* PingedUITests.swift */,
+				421C770624AFDA790074D7D9 /* Info.plist */,
+			);
+			path = PingedUITests;
+			sourceTree = "<group>";
+		};
+		421C77B924B01AEE0074D7D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				421C76E324AFDA770074D7D9 /* Pinged.xcdatamodeld */,
+				421C76F024AFDA790074D7D9 /* Info.plist */,
+				421C77B824B01AE70074D7D9 /* Pinged-Bridging-Header.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		421C77C024B020500074D7D9 /* LANScanner */ = {
+			isa = PBXGroup;
+			children = (
+				421C77C124B020500074D7D9 /* LANScanner.h */,
+				421C781B24B121720074D7D9 /* External Libs */,
+				421C782B24B121730074D7D9 /* Scanner */,
+				421C782824B121730074D7D9 /* Models */,
+				421C782624B121720074D7D9 /* Resources */,
+			);
+			path = LANScanner;
+			sourceTree = "<group>";
+		};
+		421C77CD24B020500074D7D9 /* LANScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				421C77CE24B020500074D7D9 /* LANScannerTests.m */,
+				421C77D024B020500074D7D9 /* Info.plist */,
+			);
+			path = LANScannerTests;
+			sourceTree = "<group>";
+		};
+		421C780B24B023720074D7D9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				421C76E824AFDA790074D7D9 /* Assets.xcassets */,
+				421C76ED24AFDA790074D7D9 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		421C781B24B121720074D7D9 /* External Libs */ = {
+			isa = PBXGroup;
+			children = (
+				421C781C24B121720074D7D9 /* MacFinder */,
+				421C782324B121720074D7D9 /* SimplePing */,
+			);
+			path = "External Libs";
+			sourceTree = "<group>";
+		};
+		421C781C24B121720074D7D9 /* MacFinder */ = {
+			isa = PBXGroup;
+			children = (
+				421C782224B121720074D7D9 /* MacFinder.h */,
+				421C781D24B121720074D7D9 /* MacFinder.m */,
+				421C781E24B121720074D7D9 /* Network Headers */,
+			);
+			path = MacFinder;
+			sourceTree = "<group>";
+		};
+		421C781E24B121720074D7D9 /* Network Headers */ = {
+			isa = PBXGroup;
+			children = (
+				421C781F24B121720074D7D9 /* route.h */,
+				421C782024B121720074D7D9 /* if_ether.h */,
+				421C782124B121720074D7D9 /* if_arp.h */,
+			);
+			path = "Network Headers";
+			sourceTree = "<group>";
+		};
+		421C782324B121720074D7D9 /* SimplePing */ = {
+			isa = PBXGroup;
+			children = (
+				421C782424B121720074D7D9 /* SimplePing.h */,
+				421C782524B121720074D7D9 /* SimplePing.m */,
+			);
+			path = SimplePing;
+			sourceTree = "<group>";
+		};
+		421C782624B121720074D7D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				421C782724B121720074D7D9 /* data.plist */,
+				421C77C224B020500074D7D9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		421C782824B121730074D7D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				421C782924B121730074D7D9 /* MMDevice.m */,
+				421C782A24B121730074D7D9 /* MMDevice.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		421C782B24B121730074D7D9 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				421C783324B121730074D7D9 /* MMLANScanner.h */,
+				421C782C24B121730074D7D9 /* MMLANScanner.m */,
+				421C782E24B121730074D7D9 /* MACOperation.h */,
+				421C783124B121730074D7D9 /* MACOperation.m */,
+				421C783024B121730074D7D9 /* PingOperation.h */,
+				421C783524B121730074D7D9 /* PingOperation.m */,
+				421C782D24B121730074D7D9 /* NetworkCalculator.h */,
+				421C783224B121730074D7D9 /* NetworkCalculator.m */,
+				421C782F24B121730074D7D9 /* LANProperties.h */,
+				421C783424B121730074D7D9 /* LANProperties.m */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		421C785724B16B700074D7D9 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				421C785C24B16BFC0074D7D9 /* Views */,
+				421C785B24B16BEF0074D7D9 /* ViewModels */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		421C785824B16B970074D7D9 /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				421C781024B0279A0074D7D9 /* SimpleListRow.swift */,
+			);
+			path = SharedViews;
+			sourceTree = "<group>";
+		};
+		421C785924B16BAA0074D7D9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				421C781224B034060074D7D9 /* Logger.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		421C785A24B16BB60074D7D9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				421C785524B157870074D7D9 /* MMDeviceExtension.swift */,
+				421C785F24B174CE0074D7D9 /* LANScannerStatus.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		421C785B24B16BEF0074D7D9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				421C785324B12CA40074D7D9 /* DevicesListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		421C785C24B16BFC0074D7D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				421C780E24B026650074D7D9 /* DevicesListView.swift */,
+				421C785D24B171340074D7D9 /* DeviceDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		421C77BA24B020500074D7D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421C784C24B123500074D7D9 /* if_ether.h in Headers */,
+				421C784224B123240074D7D9 /* PingOperation.h in Headers */,
+				421C785224B1236A0074D7D9 /* SimplePing.h in Headers */,
+				421C784924B123240074D7D9 /* MACOperation.h in Headers */,
+				421C784B24B1234A0074D7D9 /* MacFinder.h in Headers */,
+				421C784024B1231D0074D7D9 /* MMDevice.h in Headers */,
+				421C784D24B123500074D7D9 /* if_arp.h in Headers */,
+				421C784324B123240074D7D9 /* MMLANScanner.h in Headers */,
+				421C784824B123240074D7D9 /* NetworkCalculator.h in Headers */,
+				421C784124B123240074D7D9 /* LANProperties.h in Headers */,
+				421C784E24B123500074D7D9 /* route.h in Headers */,
+				421C77D124B020500074D7D9 /* LANScanner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		421C76DB24AFDA770074D7D9 /* Pinged */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421C770924AFDA790074D7D9 /* Build configuration list for PBXNativeTarget "Pinged" */;
+			buildPhases = (
+				421C76D824AFDA770074D7D9 /* Sources */,
+				421C76D924AFDA770074D7D9 /* Frameworks */,
+				421C76DA24AFDA770074D7D9 /* Resources */,
+				421C778424B00E3B0074D7D9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				421C77D324B020500074D7D9 /* PBXTargetDependency */,
+			);
+			name = Pinged;
+			productName = Pinged;
+			productReference = 421C76DC24AFDA770074D7D9 /* Pinged.app */;
+			productType = "com.apple.product-type.application";
+		};
+		421C76F424AFDA790074D7D9 /* PingedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421C770C24AFDA790074D7D9 /* Build configuration list for PBXNativeTarget "PingedTests" */;
+			buildPhases = (
+				421C76F124AFDA790074D7D9 /* Sources */,
+				421C76F224AFDA790074D7D9 /* Frameworks */,
+				421C76F324AFDA790074D7D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				421C76F724AFDA790074D7D9 /* PBXTargetDependency */,
+			);
+			name = PingedTests;
+			productName = PingedTests;
+			productReference = 421C76F524AFDA790074D7D9 /* PingedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		421C76FF24AFDA790074D7D9 /* PingedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421C770F24AFDA790074D7D9 /* Build configuration list for PBXNativeTarget "PingedUITests" */;
+			buildPhases = (
+				421C76FC24AFDA790074D7D9 /* Sources */,
+				421C76FD24AFDA790074D7D9 /* Frameworks */,
+				421C76FE24AFDA790074D7D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				421C770224AFDA790074D7D9 /* PBXTargetDependency */,
+			);
+			name = PingedUITests;
+			productName = PingedUITests;
+			productReference = 421C770024AFDA790074D7D9 /* PingedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		421C77BE24B020500074D7D9 /* LANScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421C77D624B020500074D7D9 /* Build configuration list for PBXNativeTarget "LANScanner" */;
+			buildPhases = (
+				421C77BA24B020500074D7D9 /* Headers */,
+				421C77BB24B020500074D7D9 /* Sources */,
+				421C77BC24B020500074D7D9 /* Frameworks */,
+				421C77BD24B020500074D7D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LANScanner;
+			productName = LANScanner;
+			productReference = 421C77BF24B020500074D7D9 /* LANScanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		421C77C624B020500074D7D9 /* LANScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421C77D924B020500074D7D9 /* Build configuration list for PBXNativeTarget "LANScannerTests" */;
+			buildPhases = (
+				421C77C324B020500074D7D9 /* Sources */,
+				421C77C424B020500074D7D9 /* Frameworks */,
+				421C77C524B020500074D7D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				421C77CA24B020500074D7D9 /* PBXTargetDependency */,
+				421C77CC24B020500074D7D9 /* PBXTargetDependency */,
+			);
+			name = LANScannerTests;
+			productName = LANScannerTests;
+			productReference = 421C77C724B020500074D7D9 /* LANScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		421C76D424AFDA770074D7D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					421C76DB24AFDA770074D7D9 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					421C76F424AFDA790074D7D9 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 421C76DB24AFDA770074D7D9;
+					};
+					421C76FF24AFDA790074D7D9 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 421C76DB24AFDA770074D7D9;
+					};
+					421C77BE24B020500074D7D9 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					421C77C624B020500074D7D9 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 421C76DB24AFDA770074D7D9;
+					};
+				};
+			};
+			buildConfigurationList = 421C76D724AFDA770074D7D9 /* Build configuration list for PBXProject "Pinged" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 421C76D324AFDA770074D7D9;
+			productRefGroup = 421C76DD24AFDA770074D7D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				421C76DB24AFDA770074D7D9 /* Pinged */,
+				421C76F424AFDA790074D7D9 /* PingedTests */,
+				421C76FF24AFDA790074D7D9 /* PingedUITests */,
+				421C77BE24B020500074D7D9 /* LANScanner */,
+				421C77C624B020500074D7D9 /* LANScannerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		421C76DA24AFDA770074D7D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421C76EF24AFDA790074D7D9 /* LaunchScreen.storyboard in Resources */,
+				421C76EC24AFDA790074D7D9 /* Preview Assets.xcassets in Resources */,
+				421C76E924AFDA790074D7D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C76F324AFDA790074D7D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C76FE24AFDA790074D7D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C77BD24B020500074D7D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421C785024B1235B0074D7D9 /* data.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C77C524B020500074D7D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		421C76D824AFDA770074D7D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421C76E024AFDA770074D7D9 /* AppDelegate.swift in Sources */,
+				421C780F24B026650074D7D9 /* DevicesListView.swift in Sources */,
+				421C786024B174CE0074D7D9 /* LANScannerStatus.swift in Sources */,
+				421C781124B0279A0074D7D9 /* SimpleListRow.swift in Sources */,
+				421C76E524AFDA770074D7D9 /* Pinged.xcdatamodeld in Sources */,
+				421C780D24B024EA0074D7D9 /* LANScannerClient.swift in Sources */,
+				421C76E724AFDA770074D7D9 /* ContentView.swift in Sources */,
+				421C785E24B171340074D7D9 /* DeviceDetailView.swift in Sources */,
+				421C76E224AFDA770074D7D9 /* SceneDelegate.swift in Sources */,
+				421C785424B12CA40074D7D9 /* DevicesListViewModel.swift in Sources */,
+				421C781324B034060074D7D9 /* Logger.swift in Sources */,
+				421C785624B157870074D7D9 /* MMDeviceExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C76F124AFDA790074D7D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421C76FA24AFDA790074D7D9 /* PingedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C76FC24AFDA790074D7D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421C770524AFDA790074D7D9 /* PingedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C77BB24B020500074D7D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421C784F24B123540074D7D9 /* MacFinder.m in Sources */,
+				421C784424B123240074D7D9 /* NetworkCalculator.m in Sources */,
+				421C784624B123240074D7D9 /* PingOperation.m in Sources */,
+				421C784724B123240074D7D9 /* MMLANScanner.m in Sources */,
+				421C784A24B123240074D7D9 /* MACOperation.m in Sources */,
+				421C784524B123240074D7D9 /* LANProperties.m in Sources */,
+				421C783F24B123190074D7D9 /* MMDevice.m in Sources */,
+				421C785124B123660074D7D9 /* SimplePing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421C77C324B020500074D7D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421C77CF24B020500074D7D9 /* LANScannerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		421C76F724AFDA790074D7D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 421C76DB24AFDA770074D7D9 /* Pinged */;
+			targetProxy = 421C76F624AFDA790074D7D9 /* PBXContainerItemProxy */;
+		};
+		421C770224AFDA790074D7D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 421C76DB24AFDA770074D7D9 /* Pinged */;
+			targetProxy = 421C770124AFDA790074D7D9 /* PBXContainerItemProxy */;
+		};
+		421C77CA24B020500074D7D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 421C77BE24B020500074D7D9 /* LANScanner */;
+			targetProxy = 421C77C924B020500074D7D9 /* PBXContainerItemProxy */;
+		};
+		421C77CC24B020500074D7D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 421C76DB24AFDA770074D7D9 /* Pinged */;
+			targetProxy = 421C77CB24B020500074D7D9 /* PBXContainerItemProxy */;
+		};
+		421C77D324B020500074D7D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 421C77BE24B020500074D7D9 /* LANScanner */;
+			targetProxy = 421C77D224B020500074D7D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		421C76ED24AFDA790074D7D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				421C76EE24AFDA790074D7D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		421C770724AFDA790074D7D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		421C770824AFDA790074D7D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		421C770A24AFDA790074D7D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pinged/Preview Content\"";
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Pinged/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nravichan.Pinged;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Pinged/Resources/Pinged-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		421C770B24AFDA790074D7D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pinged/Preview Content\"";
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Pinged/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nravichan.Pinged;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Pinged/Resources/Pinged-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		421C770D24AFDA790074D7D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P38V59GN8H;
+				INFOPLIST_FILE = PingedTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nravichan.PingedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pinged.app/Pinged";
+			};
+			name = Debug;
+		};
+		421C770E24AFDA790074D7D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P38V59GN8H;
+				INFOPLIST_FILE = PingedTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nravichan.PingedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pinged.app/Pinged";
+			};
+			name = Release;
+		};
+		421C771024AFDA790074D7D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P38V59GN8H;
+				INFOPLIST_FILE = PingedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nravichan.PingedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pinged;
+			};
+			name = Debug;
+		};
+		421C771124AFDA790074D7D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P38V59GN8H;
+				INFOPLIST_FILE = PingedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nravichan.PingedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pinged;
+			};
+			name = Release;
+		};
+		421C77D724B020500074D7D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P38V59GN8H;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LANScanner/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nravichan.LANScanner;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		421C77D824B020500074D7D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P38V59GN8H;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LANScanner/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nravichan.LANScanner;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		421C77DA24B020500074D7D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = LANScannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nravichan.LANScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pinged.app/Pinged";
+			};
+			name = Debug;
+		};
+		421C77DB24B020500074D7D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R8U9B2AP5;
+				INFOPLIST_FILE = LANScannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nravichan.LANScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pinged.app/Pinged";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		421C76D724AFDA770074D7D9 /* Build configuration list for PBXProject "Pinged" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421C770724AFDA790074D7D9 /* Debug */,
+				421C770824AFDA790074D7D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		421C770924AFDA790074D7D9 /* Build configuration list for PBXNativeTarget "Pinged" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421C770A24AFDA790074D7D9 /* Debug */,
+				421C770B24AFDA790074D7D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		421C770C24AFDA790074D7D9 /* Build configuration list for PBXNativeTarget "PingedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421C770D24AFDA790074D7D9 /* Debug */,
+				421C770E24AFDA790074D7D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		421C770F24AFDA790074D7D9 /* Build configuration list for PBXNativeTarget "PingedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421C771024AFDA790074D7D9 /* Debug */,
+				421C771124AFDA790074D7D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		421C77D624B020500074D7D9 /* Build configuration list for PBXNativeTarget "LANScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421C77D724B020500074D7D9 /* Debug */,
+				421C77D824B020500074D7D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		421C77D924B020500074D7D9 /* Build configuration list for PBXNativeTarget "LANScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421C77DA24B020500074D7D9 /* Debug */,
+				421C77DB24B020500074D7D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		421C76E324AFDA770074D7D9 /* Pinged.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				421C76E424AFDA770074D7D9 /* Pinged.xcdatamodel */,
+			);
+			currentVersion = 421C76E424AFDA770074D7D9 /* Pinged.xcdatamodel */;
+			path = Pinged.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 421C76D424AFDA770074D7D9 /* Project object */;
+}
