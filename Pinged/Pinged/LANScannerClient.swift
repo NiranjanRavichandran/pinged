@@ -25,12 +25,13 @@ public class LANScannerClient: NSObject {
     }
 
     func startScan() {
-        Log("Starting scan")
         scanner.start()
+        Log("Scanner started")
     }
 
     func stopScan() {
         scanner.stop()
+        Log("Scanner stopped")
     }
 
 }
@@ -44,16 +45,16 @@ extension LANScannerClient: MMLANScannerDelegate {
     }
 
     public func lanScanDidFinishScanning(with status: MMLanScannerStatus) {
-        Log("Scanner did finish scanning")
         let status = LANScannerStatus(scannerStatus: status)
         if status == .finished {
             delegate?.lanScannerClientDidUpdateProgress(1.0)
+            Log("Scanner finished")
         }
         delegate?.lanScannerClientDidFinishScanning(with: status)
     }
 
     public func lanScanDidFailedToScan() {
-        Log("Scanner did fail")
+        Log("Scanner failed")
         delegate?.lanScannnerClientScanFailed()
     }
 
